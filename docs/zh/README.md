@@ -39,7 +39,7 @@ highlights:
     description: 快速上手你期待的功能，探索你尚未尝试过的新工具
     image: /images/202308/highlights-head.png
     features:
-        - title: 完全开源
+      - title: 完全开源
         icon: /images/202301/spiral-abyss-record-logo.png
         details: 基于 MulanPSL-2.0 协议开放源代码，去定制属于你自己的 SeniorOS
         link: /
