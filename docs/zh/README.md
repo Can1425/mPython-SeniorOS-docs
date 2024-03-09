@@ -6,8 +6,8 @@ heroImage: /images/202403/logo.png
 heroAlt: SeniorOS
 heroText: SeniorOS
 tagline: All-Inclusive<br/>一款运行在 mPython/掌控板 平台上的轻量级开源操作系统 （原 Flag OS）
-bgImage: /images/202403/AllInclusive.jpeg
-bgImageDark: /images/202403/AllInclusive.jpeg
+bgImage: /images/202403/AllInclusive.jpg
+bgImageDark: /images/202403/AllInclusive.jpg
 actions:
   - text: 快速开始
     link: quick-start.html

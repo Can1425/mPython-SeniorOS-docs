@@ -15,13 +15,13 @@ export default hopeTheme({
     "https://at.alicdn.com/t/c/font_3861247_yn9taeyq2sc.css",
   ],
 
-  logo: "https://img.alicdn.com/imgextra/i4/1797064093/O1CN01vK3m2w1g6duwt8quS_!!1797064093.png",
+  logo: "/images/202403/logo.png",
 
   repo: "https://gitee.com/can1425/mPython-SeniorOS",
 
   pageInfo: ["Author", "Original", "Date", "Category", "Tag", "ReadingTime"],
 
-  docsRepo: "DGP-Studio/Snap.Hutao.Docs",
+  docsRepo: "/",
 
   docsDir: "docs",
 
@@ -36,7 +36,7 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "用开源社区力量为原神 PC 端玩家带来最好的游戏体验",
+      footer: "SeniorOS - All-Inclusive",
 
       displayFooter: true,
 
