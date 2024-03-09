@@ -1,7 +1,7 @@
 ---
 home: true
 icon: iconfont icon-home
-title: SeniorOS | All-Inclusive
+title: 首页
 heroImage: /images/202403/logo.png
 heroAlt: SeniorOS
 heroText: SeniorOS
@@ -89,5 +89,3 @@ Snap Hutao 是一个由开源社区维护的免费项目，我们希望有更多
 你可以通过以下方法为项目作出贡献：
 
 1. [向我们提交 PR](https://gitee.com/can1425/mPython-SeniorOS/pulls)
-
-<!-- @include: star-request.md -->
