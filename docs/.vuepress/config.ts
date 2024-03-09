@@ -36,11 +36,9 @@ export default defineUserConfig({
   locales: {
     "/zh/": {
       lang: "zh-CN",
-      title: "胡桃工具箱",
-      description: "多功能的原神工具箱",
+      title: "SeniorOS",
+      description: "All-Inclusive",
   },
-
-  plugins: [],
 
   bundler: viteBundler({
     viteOptions: {
