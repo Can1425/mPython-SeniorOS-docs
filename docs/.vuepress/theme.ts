@@ -187,12 +187,11 @@ export default hopeTheme({
     },
 
     redirect: {
-      defaultLocale: "/en/",
+      defaultLocale: "/zh/",
       autoLocale: true,
       switchLocale: "modal",
       localeConfig: {
         "/zh/": ["zh-CN", "zh-TW", "zh"],
-        "/id/": ["id-ID", "id"],
       },
     },
   },

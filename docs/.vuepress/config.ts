@@ -38,29 +38,9 @@ export default defineUserConfig({
       lang: "zh-CN",
       title: "胡桃工具箱",
       description: "多功能的原神工具箱",
-    },
-    "/en/": {
-      lang: "en-US",
-      title: "Snap Hutao",
-      description: "Super utilitarian Genshin Impact Toolkit",
-    },
-    "/id/": {
-      lang: "id-ID",
-      title: "Snap Hutao",
-      description: "Alat Bantu Genshin Impact yang Sangat Utilitarian",
-    },
-    "/ru/": {
-      lang: "ru-RU",
-      title: "Snap Hutao",
-      description: "Суперполезный набор инструментов для Genshin Impact",
-    },
   },
 
-  plugins: [
-    googleAnalyticsPlugin({
-      id: "G-F3LFJCE3RM",
-    }),
-  ],
+  plugins: [],
 
   bundler: viteBundler({
     viteOptions: {
