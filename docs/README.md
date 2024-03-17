@@ -4,7 +4,7 @@ home: true
 title: mPython SeniorOS
 heroFullScreen: true
 heroImageDark: /img/home-logo.png
-heroText: Fast Request
+heroText: SeniorOS
 tagline: All-Inclusive | 包罗万象
 actions:
   - text: 快速上手
