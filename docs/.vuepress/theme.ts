@@ -1,7 +1,7 @@
 import {getDirname, path} from "vuepress/utils";
 import {hopeTheme} from "vuepress-theme-hope";
-import {zhNavbar} from "./navbar.js";
-import {zhSidebar} from "./sidebar.js";
+import {enNavbar, zhNavbar} from "./navbar.js";
+import {enSidebar, zhSidebar} from "./sidebar.js";
 
 const __dirname = getDirname(import.meta.url);
 
@@ -14,7 +14,7 @@ export default hopeTheme(
     docsDir: "docs",
     docsBranch: "main",
 
-    copyright: "Copyright © 2021-present 惟灿 Can1425",
+    copyright: "Copyright © 2021-present",
     displayFooter: true,
 
     pageInfo: false,
@@ -34,6 +34,7 @@ export default hopeTheme(
         navbar: zhNavbar,
         sidebar: zhSidebar,
       },
+    },
 
     plugins: {
       // comment: {
@@ -50,9 +51,9 @@ export default hopeTheme(
           notice: [
             {
               path: "/",
-              title: "Flag OS 已正式更名为 SeniorOS",
+              title: "文档正在加紧编写...",
               content:
-                '<ul><li>All-Inclusive | 包罗万象</li></ul><div class="addthis_inline_follow_toolbox_qssu"></div>',
+                '<ul><li>All-Inclusive</li></ul><div class="addthis_inline_follow_toolbox_qssu"></div>',
               actions: [
                 {
                   text: "了解详情→",
@@ -103,4 +104,5 @@ export default hopeTheme(
       },
     },
   },
+  { custom: true },
 );
