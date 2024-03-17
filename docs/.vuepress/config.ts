@@ -8,8 +8,8 @@ import theme from "./theme.js";
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
-  title: "Fast Request",
-  description: "Intellij Restful Fast Request",
+  title: "SeniorOS",
+  description: "All-Inclusive | 包罗万象",
   shouldPrefetch: false,
   head: [
     [
@@ -18,7 +18,7 @@ export default defineUserConfig({
       `
         (function() {
           if (location.href.indexOf('gitee.io') > -1 || location.href.indexOf('sheng90.wang') > -1) {
-            window.location.href = 'https://api-buddy.cn';
+            window.location.href = 'https://senioros.stfp.site';
           }
         })();
         `,
@@ -27,7 +27,7 @@ export default defineUserConfig({
       "link",
       {
         rel: "icon",
-        href: "/img/fastRequest.svg",
+        href: "/img/home-logo.png",
       },
     ],
     [
@@ -58,9 +58,6 @@ export default defineUserConfig({
   locales: {
     "/": {
       lang: "zh-CN",
-    },
-    "/en/": {
-      lang: "en-US",
     },
   },
 
