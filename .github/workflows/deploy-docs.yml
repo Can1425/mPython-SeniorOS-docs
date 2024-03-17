@@ -3,10 +3,10 @@ name: Deploy Docs
 on:
   push:
     branches:
-      - "main"
+      - main
 
 jobs:
-  deploy-gh-pages:
+  docs-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -14,31 +14,28 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup pnpm
+      - name: Install pnpm
         uses: pnpm/action-setup@v2
-        with:
-          run_install: true
-          version: latest
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 20
           cache: pnpm
 
-      - name: Install Deps
-        run: pnpm install
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
 
-      - name: Build Docs
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          pnpm run docs:build
-          > dist/.nojekyll
+      - name: Build docs
+        run: pnpm docs:build
 
-      - name: Deploy Docs
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Add .nojekyll
+        run: echo > docs/.vuepress/dist/.nojekyll
+
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v2
         with:
-          # This is the branch where the docs are deployed to
-          branch: gh-pages
-          folder: dist
+          build_dir: docs/.vuepress/dist
+          target_branch: gh-pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
