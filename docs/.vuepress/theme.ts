@@ -1,7 +1,7 @@
 import {getDirname, path} from "vuepress/utils";
 import {hopeTheme} from "vuepress-theme-hope";
-import {enNavbar, zhNavbar} from "./navbar.js";
-import {enSidebar, zhSidebar} from "./sidebar.js";
+import {zhNavbar} from "./navbar.js";
+import {zhSidebar} from "./sidebar.js";
 
 const __dirname = getDirname(import.meta.url);
 
