@@ -1,20 +1,20 @@
 import {getDirname, path} from "vuepress/utils";
 import {hopeTheme} from "vuepress-theme-hope";
-import {enNavbar, zhNavbar} from "./navbar.js";
-import {enSidebar, zhSidebar} from "./sidebar.js";
+import {zhNavbar} from "./navbar.js";
+import {zhSidebar} from "./sidebar.js";
 
 const __dirname = getDirname(import.meta.url);
 
 export default hopeTheme(
   {
-    hostname: "https://api-buddy.cn",
-    logo: "/img/fastRequest.svg",
+    hostname: "https://senioros.stfp.site",
+    logo: "/img/home-logo.png",
 
-    repo: "https://github.com/dromara/fast-request",
+    repo: "https://github.com/Can1425/mPython-SeniorOS-docs",
     docsDir: "docs",
-    docsBranch: "master",
+    docsBranch: "main",
 
-    copyright: "Copyright © 2021-present Kings",
+    copyright: "Copyright © 2021-present 惟灿 Can1425",
     displayFooter: true,
 
     pageInfo: false,
@@ -35,14 +35,6 @@ export default hopeTheme(
         sidebar: zhSidebar,
       },
 
-      "/en/": {
-        navbar: enNavbar,
-        sidebar: enSidebar,
-        footer:
-          "Theme by <a target='blank' href='https://theme-hope.vuejs.press/'>vuepress-theme-hope</a>",
-      },
-    },
-
     plugins: {
       // comment: {
       //   provider: "Giscus",
@@ -58,28 +50,13 @@ export default hopeTheme(
           notice: [
             {
               path: "/",
-              title: "将在2024.1.3推出",
+              title: "Flag OS 已正式更名为 SeniorOS",
               content:
-                '<ul><li>AI支持优化</li></ul><div class="addthis_inline_follow_toolbox_qssu"></div>',
+                '<ul><li>All-Inclusive | 包罗万象</li></ul><div class="addthis_inline_follow_toolbox_qssu"></div>',
               actions: [
                 {
                   text: "了解详情→",
                   link: "/guide/history.html#_2024-1-3",
-                  type: "primary",
-                },
-              ],
-              showOnce: true,
-              key: "2024.1.3",
-            },
-            {
-              path: "/en",
-              title: "Coming in <b>2024.1.3</b>",
-              content:
-                '<ul><li>AI support optimization</li></ul><div class="addthis_inline_follow_toolbox"></div>',
-              actions: [
-                {
-                  text: "Learn more→",
-                  link: "/en/guide/history.html#_2024-1-3",
                   type: "primary",
                 },
               ],
