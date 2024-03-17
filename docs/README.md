@@ -1,5 +1,4 @@
 ---
-icon: restfulFastRequest
 home: true
 title: mPython SeniorOS
 heroFullScreen: true
