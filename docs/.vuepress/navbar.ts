@@ -1,42 +1,39 @@
 import { navbar } from "vuepress-theme-hope";
 
-export const zhNavbar = navbar([
+export default navbar([
   {
-    text: "快速上手",
-    link: "/guide/getstarted/start",
-    icon: "start1",
+    text: '破解教程',
+    icon: 'desktop',
+    link: '/破解教程/',
   },
   {
-    text: "用户手册",
-    link: "/guide/features/README.md",
-    icon: "featuresNew",
+    text: '互助文档',
+    icon: 'book',
+    link: '/互助文档/',
   },
   {
-    text: "开发者手册",
-    link: "/guide/history",
-    icon: "changelog",
+    text: '链接合集',
+    icon: 'link',
+    link: '/各种链接/',
   },
   {
-    text: "Web App",
-    link: "/guide/script",
-    icon: "code-box-fill",
+    text: '免责声明',
+    icon: 'gavel',
+    link: '/免责声明',
   },
   {
-    text: "先锋计划",
-    icon: "team",
-    link: "/guide/concatGroup",
+    text: 'TWRP 下载',
+    icon: 'masks-theater',
+    link: 'https://midrai.cn/recovery',
   },
   {
-    text: "🎯 FAQ",
-    link: "/guide/faq",
+    text: '交流论坛',
+    icon: 'user-group',
+    link: 'https://bbs.midrai.cn',
   },
   {
-    text: "更多",
-    children: [
-      "/guide/link",
-      "/guide/sponsorList",
-      "/guide/activity",
-      "/guide/java",
-    ],
+    text: '捐赠支持',
+    icon: 'money-bill',
+    link: 'https://donate.midrai.cn',
   },
 ]);

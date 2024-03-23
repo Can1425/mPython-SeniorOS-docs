@@ -1,108 +1,57 @@
-import {getDirname, path} from "vuepress/utils";
-import {hopeTheme} from "vuepress-theme-hope";
-import {zhNavbar} from "./navbar.js";
-import {zhSidebar} from "./sidebar.js";
+import { hopeTheme } from "vuepress-theme-hope";
+import navbar from "./navbar.js";
+import sidebar from "./sidebar.js";
 
-const __dirname = getDirname(import.meta.url);
+export default hopeTheme({
+  hostname: "https://senioros.stfp.site",
+  logo: "/logo-black.png",
+  logoDark: "/logo.png",
+  repo: '/',
 
-export default hopeTheme(
-  {
-    hostname: "https://senioros.stfp.site",
-    logo: "/img/home-logo.png",
+  iconAssets: "fontawesome-with-brands",
+  print: false,
 
-    repo: "https://github.com/Can1425/mPython-SeniorOS-docs",
-    docsDir: "docs",
-    docsBranch: "main",
+  lastUpdated: true,
+  contributors: true,
+  docsDir: 'docs',
+  docsBranch: 'main',
 
-    copyright: "Copyright © 2021-present",
-    displayFooter: true,
+  navbar,
+  sidebar,
 
-    pageInfo: false,
-    fullscreen: true,
-    editLink: false,
-    contributors: false,
+  copyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="CC BY-NC-SA 4.0 Badge" /></a>&nbsp;<a href="https://www.gnu.org/licenses/agpl-3.0" target="_blank"><img src="https://www.gnu.org/graphics/agplv3-88x31.png" alt="AGPL 3.0 Badge" /></a>',
+  license: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>&nbsp;|&nbsp;<a href="https://www.gnu.org/licenses/agpl-3.0" target="_blank">AGPL 3.0</a>',
+  footer: `Can1425 2021-${(new Date()).getFullYear()}`,
+  displayFooter: true,
 
-    darkmode: "enable",
+  // hotReload: true,
 
-    iconAssets: "//at.alicdn.com/t/c/font_2601581_d17fm4nxa97.css",
-
-    locales: {
-      "/": {
-        footer:
-          "主题使用 <a target='blank' href='https://theme-hope.vuejs.press/zh/'>vuepress-theme-hope</a>",
-
-        navbar: zhNavbar,
-        sidebar: zhSidebar,
-      },
+  plugins: {
+    git: true,
+    components: {
+      components: ["Badge", "VPCard"],
     },
 
-    plugins: {
-      // comment: {
-      //   provider: "Giscus",
-      //   repo: "kings1990/giscus-fastrequest",
-      //   repoId: "R_kgDOHLlUsg",
-      //   category: "fastRequest",
-      //   categoryId: "DIC_kwDOHLlUss4COlsW",
-      // },
+    mdEnhance: {
+      align: true,
+      attrs: true,
+      codetabs: true,
+      component: true,
+      demo: true,
+      figure: true,
+      imgLazyload: true,
+      imgSize: true,
+      include: true,
+      mark: true,
+      sub: true,
+      sup: true,
+      tabs: true,
+      vPre: true,
+    },
 
-      components: {
-        components: ["Badge", "BiliBili", "SiteInfo", "VPCard","VPBanner"],
-        rootComponents: {
-          notice: [
-            {
-              path: "/",
-              title: "文档正在加紧编写...",
-              content:
-                '<ul><li>All-Inclusive</li></ul><div class="addthis_inline_follow_toolbox_qssu"></div>',
-              actions: [
-                {
-                  text: "了解详情→",
-                  link: "/guide/history.html#_2024-1-3",
-                  type: "primary",
-                },
-              ],
-              showOnce: true,
-              key: "2024.1.3",
-            },
-          ],
-        },
-      },
-
-      docsearch: {
-        appId: "8FRYEU6KK8",
-        apiKey: "84f513df1e83406ba42179da778d87b4",
-        indexName: "dromara-fast-request",
-        locales: {
-          "/en/": {
-            placeholder: "Search docs",
-            translations: {
-              button: {
-                buttonText: "Search docs",
-              },
-            },
-          },
-        },
-      },
-
-      mdEnhance: {
-        align: true,
-        chart: true,
-        codetabs: true,
-        component: true,
-        hint: true,
-        imgLazyload: true,
-        imgSize: true,
-        include: {
-          resolvePath: (file) =>
-            file.startsWith("@src")
-              ? file.replace("@src", path.resolve(__dirname, ".."))
-              : file,
-        },
-        mark: true,
-        tabs: true,
-        tasklist: true,
-      },
+    searchPro: {
+      indexContent: true,
+      autoSuggestions: true,
     },
   },
-  { custom: true },
-);
+});
