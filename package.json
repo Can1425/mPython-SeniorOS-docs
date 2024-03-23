@@ -1,20 +1,29 @@
 {
-  "name": "crackmidrai-docs",
-  "version": "2.0.0",
-  "description": "Documents of MiDrAI",
-  "license": "AGPL-3.0-only",
-  "type": "module",
+  "name": "vitepress-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "chenjunyi <629162344@qq.com>",
+  "license": "MIT",
   "scripts": {
-    "build": "vuepress-vite build docs",
-    "clean-dev": "vuepress-vite dev docs --clean-cache",
-    "dev": "vuepress-vite dev docs",
-    "update-package": "npx vp-update"
+    "cz": "git add . && git-cz && git push",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs",
+    "prepare": "husky install"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.7",
-    "vue": "^3.4.21",
-    "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.27",
-    "vuepress-theme-hope": "2.0.0-rc.30"
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "vitepress": "1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "husky": "^5.1.3"
   }
 }
