@@ -23,9 +23,6 @@ jobs:
           node-version: 20
           cache: pnpm
 
-      - name: Install deps
-        run: pnpm install --frozen-lockfile
-
       - name: Build docs
         run: pnpm docs:build
 
