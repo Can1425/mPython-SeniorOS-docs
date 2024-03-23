@@ -9,7 +9,7 @@ import type MarkdownIt from 'markdown-it'
  * @see app-configs https://vitepress.vuejs.org/config/app-configs.html
  */
 export default {
-  title: 'vitepress-template',
+  title: '苍旻OS｜SeniorOS',
   /**
    * 是否显示最后更新时间
    *
@@ -41,8 +41,8 @@ export default {
      */
     socialLinks: [
       {
-        icon: 'github',
-        link: 'https://github.com/Tyh2001/vitepress-template'
+        icon: 'gitee',
+        link: 'https://gitee.com/Can1425/mPython-SeniorOS'
       }
     ],
     nav,
