@@ -8,7 +8,7 @@ hero:
   text: SeniorOS
   tagline: 使用/开发文档
   image:
-    src: /.vitepress/public/logo.png
+    src: https://can1425.stfp.site/img/24_3_9aec40139d3078d84ea2d4fa7c944d2e.png
     alt: logo
   actions:
     - theme: brand
