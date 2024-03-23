@@ -1,21 +1,35 @@
 {
-  "name": "crackmidrai-docs",
-  "version": "2.0.0",
-  "description": "Documents of MiDrAI",
-  "license": "AGPL-3.0-only",
+  "name": "seniorosdocs",
+  "version": "1.0.0",
+  "description": "senioros",
+  "license": "MIT",
   "type": "module",
   "scripts": {
-    "build": "vuepress-vite build docs",
-    "clean-dev": "vuepress-vite dev docs --clean-cache",
-    "dev": "vuepress-vite dev docs",
-    "update-package": "npx vp-update"
+    "docs:build": "vuepress build docs",
+    "docs:clean-dev": "vuepress dev docs --clean-cache",
+    "docs:dev": "vuepress dev docs",
+    "lint": "prettier --check --write .",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "^2.0.0-rc.7",
-    "vue": "^3.4.21",
+    "@vuepress/bundler-vite": "2.0.0-rc.8",
+    "@vuepress/plugin-docsearch": "2.0.0-rc.15",
+    "@vuepress/plugin-feed": "2.0.0-rc.15",
+    "@vuepress/plugin-google-analytics": "2.0.0-rc.15",
+    "@vuepress/plugin-pwa": "2.0.0-rc.16",
+    "@vuepress/plugin-redirect": "2.0.0-rc.15",
+    "husky": "9.0.11",
+    "nano-staged": "0.8.0",
+    "prettier": "3.2.5",
+    "vue": "^3.4.19",
     "vuepress": "2.0.0-rc.8",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.27",
-    "vuepress-theme-hope": "2.0.0-rc.30"
-  }
-    "packageManager": "pnpm@8.15.3"
+    "vuepress-theme-hope": "2.0.0-rc.25"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  },
+  "nano-staged": {
+    "*.md": "prettier --write"
+  },
+  "packageManager": "pnpm@8.15.3"
 }
