@@ -8,7 +8,7 @@ hero:
   text: SeniorOS
   tagline: 使用/开发文档
   image:
-    src: /images/logo.png
+    src: /logo.png
     alt: logo
   actions:
     - theme: brand
