@@ -8,4 +8,6 @@ export default defineUserConfig({
   title: "SeniorOS | 苍旻OS",
   description: "SeniorOS 使用/开发文档",
 
+  dest: "docs/.vuepress/dist"
+
 });
