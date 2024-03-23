@@ -4,7 +4,7 @@ name: Tyh Blog Github Actions
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-deploy:
