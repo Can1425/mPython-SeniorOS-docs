@@ -17,4 +17,5 @@
     "vuepress-plugin-search-pro": "^2.0.0-rc.27",
     "vuepress-theme-hope": "2.0.0-rc.30"
   }
+    "packageManager": "pnpm@8.15.3"
 }
