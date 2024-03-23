@@ -1,25 +1,42 @@
-# 前言
+# Vitepress-template
 
-前端进阶知识博客网站，基础、原理、源码、框架、算法一网打尽。希望能对大家的学习有所帮助！
+## 💬 介绍
 
-# 觉得有用的话可以给个star哦 🙏 🙏 🙏
+[Vitepress](https://vitepress.vuejs.org) 模板，快速搭建你的静态网站和博客。
 
-[gitee国内访问地址](https://junyi-chen.gitee.io/article/)
+## ✨ 特性
 
-[github访问地址](https://process1024.github.io/article/)
+- 📌 开箱即用
+- 🚀 和 [fighting-design](https://github.com/FightingDesign/fighting-design) 完美结合
+- 💪 使用 Vue.js 最新特性开发
+- 🐆 全面基于 Vite，速度够快
+- 🖍️ markdown 中直接使用 vue 组件
+- ✔️ 配置简单，上手容易
+- 🚩 markdown 中直接使用 setup 语法糖
+- 📃 第三方组件库支持
 
-# 联系方式
+## 👀 启动
 
-有问题可以提issue或者pr，也可以加微信联系我!或者关注我的公众号：`前端好好玩` 
+```shell
+# 安装依赖
+pnpm i
 
-<center >
- <img src="./images/wechat.jpg" style="display: inline-block;" width="150px" height="180px" alt="联系方式" />
- <img src="./images/qrcode.jpg" style="display: inline-block;"   width="150px" height="150px" alt="前端好好玩" />
-</center>
+# 启动
+pnpm dev
 
-# 如果觉得对你有帮助，也可以请作者喝杯咖啡 ☕️
+# 打包
+pnpm build
 
-<center >
- <img src="./images/ali-receive.jpeg"  style="display: inline-block;"  width="140px" height="180px" alt="联系方式" />
- <img src="./images/wechat-receive.jpeg" style="display: inline-block;"   width="140px" height="180px" alt="联系方式" />
-</center>
+# 预览打包
+pnpm serve
+```
+
+## 🕵️‍♀️ 更新日志
+
+参考 [CHANGELOG.md](https://github.com/Tyh2001/vitepress-template/blob/master/CHANGELOG.md)
+
+## 🙏 贡献者
+
+该仓库由 [Tyh2001](https://github.com/Tyh2001) 提供。
+
+![](https://tianyuhao.cn/images/auto/weixin.png)
