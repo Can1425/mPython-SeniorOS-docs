@@ -1,5 +1,4 @@
 import { nav } from './config/nav'
-import { sidebar } from './config/sidebar'
 import { PluginTable } from './plugin'
 import type MarkdownIt from 'markdown-it'
 
