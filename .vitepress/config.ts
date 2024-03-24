@@ -1,5 +1,4 @@
 import { nav } from './config/nav'
-import { sidebar } from './config/sidebar'
 import { PluginTable } from './plugin'
 import type MarkdownIt from 'markdown-it'
 
@@ -45,8 +44,7 @@ export default {
         link: 'https://gitee.com/Can1425/mPython-SeniorOS'
       }
     ],
-    nav,
-    sidebar
+    nav
   },
   /**
    * 自定义 markdown 解析器
