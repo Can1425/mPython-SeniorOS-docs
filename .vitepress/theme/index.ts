@@ -1,6 +1,5 @@
 import { h } from 'vue'
 import DefaultTheme from 'vitepress/theme'
-import vpSearch from './components/vp-search.vue'
 import './style/index.scss'
 import type { VNode } from 'vue'
 
@@ -23,7 +22,6 @@ export default {
        *
        * @see 布局插槽 https://vitepress.dev/zh/guide/extending-default-theme#layout-slots
        */
-      'nav-bar-content-before': (): VNode => h(vpSearch)
     })
   },
   enhanceApp({ app }) {
