@@ -1,4 +1,5 @@
 import { nav } from './config/nav'
+import { sidebar } from './config/sidebar'
 import { PluginTable } from './plugin'
 import type MarkdownIt from 'markdown-it'
 
@@ -45,6 +46,7 @@ export default {
       }
     ],
     nav
+    sidebar
   },
   /**
    * 自定义 markdown 解析器
