@@ -7,7 +7,7 @@ titleTemplate: SeniorOS 是运行在 mPython（掌控版）平台上的轻量级
 
 hero:
   name: "苍旻操作系统"
-  text: "一个轻量，强大的 mPython 平台操作系统"
+  text: "轻量，强大的 mPython 平台操作系统"
   tagline: All-Inclusive
   actions:
     - theme: brand
@@ -19,7 +19,7 @@ hero:
     - theme: alt
       text: Gitee
       link: https://gitee.com/can1425/mPython-SeniorOS
-      
+
 features:
   - icon: ⚡️
     title: 全面开源
