@@ -1,30 +1,26 @@
-import { h } from 'vue'
-import DefaultTheme from 'vitepress/theme'
-import './style/index.scss'
-import type { VNode } from 'vue'
-
-/**
- * 使用第三方组件库
- * 
- * @see fighting-design https://github.com/FightingDesign/fighting-design
+/*
+ * @Description:
+ * @Author: 安知鱼
+ * @Email: anzhiyu-c@qq.com
+ * @Date: 2023-08-22 11:38:56
+ * @LastEditTime: 2023-09-02 21:53:56
+ * @LastEditors: 安知鱼
  */
-import FightingDesign from 'fighting-design'
-import 'fighting-design/dist/index.css'
+
+// https://vitepress.dev/guide/custom-theme
+import { h } from "vue";
+import Theme from "vitepress/theme";
+import { enhanceAppWithTabs } from "vitepress-plugin-tabs/client";
+import "./style.css";
 
 export default {
-  ...DefaultTheme,
-  Layout() {
-    return h(DefaultTheme.Layout, null, {
-      /**
-       * 导航栏插入搜索的输入框插槽
-       *
-       * 更多插槽参考
-       *
-       * @see 布局插槽 https://vitepress.dev/zh/guide/extending-default-theme#layout-slots
-       */
-    })
+  extends: Theme,
+  Layout: () => {
+    return h(Theme.Layout, null, {
+      // https://vitepress.dev/guide/extending-default-theme#layout-slots
+    });
   },
-  enhanceApp({ app }) {
-    app.use(FightingDesign)
-  }
-}
+  enhanceApp({ app, router, siteData }) {
+    enhanceAppWithTabs(app);
+  },
+};

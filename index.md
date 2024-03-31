@@ -1,25 +1,28 @@
 ---
+# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-title: 首页
+title: 苍旻OS-SeniorOS Docs
+titleTemplate: SeniorOS 是运行在 mPython（掌控版）平台上的轻量级多文件操作系统，旨在致力于构建完整的 mPython 生态体验。
 
 hero:
-  name: 苍旻操作系统
-  text: SeniorOS
-  tagline: 使用/开发文档
-  image:
-    src: https://can1425.stfp.site/img/oslogo.png
-    alt: logo
+  name: "苍旻操作系统"
+  text: "一个轻量，强大的 mPython 平台操作系统"
+  tagline: All-Inclusive
   actions:
     - theme: brand
-      text: 快速开始
-      link: /start
-    - theme: brand
-      text: 开发文档
-      link: /dev
+      text: 快速上手
+      link: /initall
+    - theme: alt
+      text: 简介
+      link: /intro
     - theme: alt
       text: Gitee
-      link: https://github.com/Can1425/mPython-SeniorOS
+      link: https://gitee.com/can1425/mPython-SeniorOS
+  image:
+    src: /cover.png
+    alt: 苍旻OS-SeniorOS
+
 features:
   - icon: ⚡️
     title: 全面开源
@@ -31,3 +34,4 @@ features:
     title: 进步无限
     details: WIFI 预置进配置，创新网络插件......
 ---
+
