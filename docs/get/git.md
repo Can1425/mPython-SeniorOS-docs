@@ -9,7 +9,7 @@ title: Git 克隆文件
 
 选定一个目录，在该目录单击右键
 
-![右键菜单](./youjiancaidan165452.png)
+![右键菜单](/youjiancaidan165452.png)
 
 这里推荐你选择 `Git Bash Here`
 
@@ -27,7 +27,7 @@ title: Git 克隆文件
 
 回车，稍作停顿，效果如下
 
-![Git Bash](./gitbash170102.png)
+![Git Bash](/gitbash170102.png)
 
 ## 检查目录结构
 
