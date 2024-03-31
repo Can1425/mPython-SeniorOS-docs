@@ -41,8 +41,8 @@ jobs:
         run: echo 'vitepress-template.tianyuhao.cn' > .vitepress/dist/CNAME
       - name: Commit CNAME file
         run: |
-          git config --local user.email '1469442737@qq.com'
-          git config --local user.name 'Tyh2001'
+          git config --local user.email 'myqf1425@126.com'
+          git config --local user.name 'Can1425'
           git add -f .vitepress/dist/CNAME
 
       # 向 Codecov 报告覆盖率

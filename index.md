@@ -12,10 +12,10 @@ hero:
   actions:
     - theme: brand
       text: 快速上手
-      link: /initall
+      link: docs/initall
     - theme: alt
       text: 简介
-      link: /intro
+      link: docs/intro
     - theme: alt
       text: Gitee
       link: https://gitee.com/can1425/mPython-SeniorOS
@@ -34,4 +34,3 @@ features:
     title: 进步无限
     details: WIFI 预置进配置，创新网络插件......
 ---
-
