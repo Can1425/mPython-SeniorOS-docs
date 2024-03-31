@@ -26,10 +26,10 @@ export const sidebar = {
           text: "构建环境 🧠",
           collapsed: false,
           items: [
-            { text: "步骤认识", link: "/global/base" },
-            { text: "创建并激活虚拟环境", link: "/global/extra" },
-            { text: "安装编译器及 Build.py 前置", link: "/global/extra" },
-            { text: "使用 Build.py 构建", link: "/global/extra" },
+            { text: "步骤认识", link: "/docs/construct-environment/intro" },
+            { text: "创建并激活虚拟环境", link: "/docs/construct-environment/create-and-activate-venv" },
+            { text: "安装编译器及 Build.py 前置", link: "/docs/construct-environment/installation-dependency" },
+            { text: "使用 Build.py 构建", link: "/docs/construct-environment/construct" },
           ],
         },
         {
