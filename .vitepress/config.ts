@@ -9,7 +9,7 @@ import type MarkdownIt from 'markdown-it'
  * @see app-configs https://vitepress.vuejs.org/config/app-configs.html
  */
 export default {
-  title: 'vitepress-template',
+  title: '苍旻OS-SeniorOS Docs',
   /**
    * 是否显示最后更新时间
    *
@@ -28,6 +28,8 @@ export default {
    * @see theme-config https://vitepress.vuejs.org/guide/migration-from-vitepress-0#theme-config
    */
   themeConfig: {
+    siteTitle: '苍旻OS | SeniorOS' <Badge type="tip" text="Alpha" />,
+    logo: '/oslogo.png',
     /**
      * 最后更新时间的文案显示
      *

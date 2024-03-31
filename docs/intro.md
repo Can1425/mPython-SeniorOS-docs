@@ -1,9 +1,7 @@
 ---
 title: 系统简介
 ---
-
-# 简介
-<img src="https://gitee.com/can1425/mPython-SeniorOS/raw/Alpha/gitee_logo.jpg" height="1280" width="588">
+# 系统简介
 
 ## Welcome！👏
 
