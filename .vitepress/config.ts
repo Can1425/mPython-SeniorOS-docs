@@ -41,8 +41,8 @@ export default {
      */
     socialLinks: [
       {
-        icon: 'github',
-        link: 'https://github.com/Tyh2001/vitepress-template'
+        svg: 'https://talk.gitee.com/search/resources/images/logo.svg?20200207',
+        link: 'https://gitee.com/Can1425/mPython-SeniorOS'
       }
     ],
     nav,
