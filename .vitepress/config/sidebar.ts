@@ -17,9 +17,9 @@ export const sidebar = {
           text: "克隆仓库 📦",
           collapsed: false,
           items: [
-            { text: "步骤认识", link: "/page/front-matter" },
-            { text: "Git 克隆文件", link: "/page/tags" },
-            { text: "Gitee 下载 .zip 文件", link: "/page/classify" },
+            { text: "步骤认识", link: "/docs/get/intro" },
+            { text: "Git 克隆文件", link: "/docs/get/git" },
+            { text: "Gitee 下载 .zip 文件", link: "/docs/get/gitee-download-zip" },
           ],
         },
         {
@@ -37,7 +37,7 @@ export const sidebar = {
           collapsed: false,
           items: [
             { text: "步骤认识", link: "/advanced/" },
-            { text: "使用 uPython 上传编译文件", link: "/page/links" },
+            { text: "使用 uPyLoader 上传编译文件", link: "/page/links" },
             { text: "使用 Thonny 上传编译文件", link: "/page/message" },
           ],
         },
