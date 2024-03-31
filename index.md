@@ -19,10 +19,7 @@ hero:
     - theme: alt
       text: Gitee
       link: https://gitee.com/can1425/mPython-SeniorOS
-  image:
-    src: /cover.png
-    alt: 苍旻OS-SeniorOS
-
+      
 features:
   - icon: ⚡️
     title: 全面开源

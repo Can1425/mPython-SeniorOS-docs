@@ -29,7 +29,7 @@ export default {
    */
   themeConfig: {
 
-    siteTitle: '苍旻OS | SeniorOS <Badge type="tip" text="Alpha" />',
+    siteTitle: '苍旻OS | SeniorOS',
 
     logo: '/oslogo.png',
  
