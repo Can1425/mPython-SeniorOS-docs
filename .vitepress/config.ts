@@ -28,13 +28,11 @@ export default {
    * @see theme-config https://vitepress.vuejs.org/guide/migration-from-vitepress-0#theme-config
    */
   themeConfig: {
-    siteTitle: '苍旻OS | SeniorOS' <Badge type="tip" text="Alpha" />,
+
+    siteTitle: '苍旻OS | SeniorOS <Badge type="tip" text="Alpha" />',
+
     logo: '/oslogo.png',
-    /**
-     * 最后更新时间的文案显示
-     *
-     * @see lastUpdatedText https://vitepress.vuejs.org/config/theme-configs#lastupdatedtext
-     */
+ 
     lastUpdatedText: '最后更新时间',
     /**
      * 配置导航栏图表
