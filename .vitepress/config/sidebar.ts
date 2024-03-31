@@ -23,13 +23,13 @@ export const sidebar = {
           ],
         },
         {
-          text: "编译环境 🧠",
+          text: "构建环境 🧠",
           collapsed: false,
           items: [
             { text: "步骤认识", link: "/global/base" },
             { text: "创建并激活虚拟环境", link: "/global/extra" },
             { text: "安装编译器及 Build.py 前置", link: "/global/extra" },
-            { text: "使用 Build.py 编译", link: "/global/extra" },
+            { text: "使用 Build.py 构建", link: "/global/extra" },
           ],
         },
         {
