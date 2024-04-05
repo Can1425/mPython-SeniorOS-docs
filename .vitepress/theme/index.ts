@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import vpSearch from './components/vp-search.vue'
 import './style/index.scss'
 import type { VNode } from 'vue'
+import './style/var.css'
 
 /**
  * 使用第三方组件库
