@@ -41,7 +41,7 @@ export default {
      */
     socialLinks: [
       {
-        logo: 'github',
+        svg: 'https://www.svgrepo.com/show/330508/gitee.svg',
         link: 'https://gitee.com/Can1425/mPython-SeniorOS'
       }
     ],
