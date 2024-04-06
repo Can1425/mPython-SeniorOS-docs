@@ -1,7 +1,7 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
-
+markdownStyles: true
 title: 苍旻OS-SeniorOS Docs
 titleTemplate: SeniorOS 是运行在 mPython（掌控版）平台上的轻量级多文件操作系统，旨在致力于构建完整的 mPython 生态体验。
 
