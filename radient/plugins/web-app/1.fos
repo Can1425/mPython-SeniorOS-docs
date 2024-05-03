@@ -1,0 +1,111 @@
+from mpython import *
+
+def write():
+    global text, x, i, y, image_list, j
+    oled.fill_rect(66, 0, 65, 64, 0)
+    oled.rect(0, 0, 65, 64, 1)
+    for i in range(0, 66, 8):
+        oled.vline(i, 0, 65, 1)
+    for i in range(0, 66, 8):
+        oled.hline(0, i, 64, 1)
+
+def scan_list(text):
+    global x, i, y, image_list, j
+    if text == '0000':
+        return '0'
+    elif text == '0001':
+        return '1'
+    if text == '0010':
+        return '2'
+    elif text == '0011':
+        return '3'
+    if text == '0100':
+        return '4'
+    elif text == '0101':
+        return '5'
+    if text == '0110':
+        return '6'
+    elif text == '0111':
+        return '7'
+    if text == '1000':
+        return '8'
+    elif text == '1001':
+        return '9'
+    if text == '1010':
+        return 'A'
+    elif text == '1011':
+        return 'B'
+    if text == '1100':
+        return 'C'
+    elif text == '1101':
+        return 'D'
+    if text == '1110':
+        return 'E'
+    elif text == '1111':
+        return 'F'
+
+x = None
+
+y = None
+
+def init_text_file(_path):
+    f = open(_path, 'w')
+    f.close()
+
+def write_data_to_file(_path, _data, _sep):
+    f = open(_path, 'a')
+    f.write(_data + _sep)
+    f.close()
+
+import time
+write()
+x = 0
+y = 0
+image_list = [[0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0], [0,0,0,0,0,0,0,0]]
+while not button_a.is_pressed():
+    write()
+    oled.DispChar(str(str('坐标') + str((str(str(x) + str(',')) + str(y)))), 65, 0, 1)
+    oled.DispChar(str('B/绘制'), 65, 16, 1)
+    oled.DispChar(str('N/保存'), 65, 32, 1)
+    oled.DispChar(str('PYTH/移动'), 65, 48, 1)
+    if touchpad_n.is_pressed():
+        init_text_file('image.txt')
+        for j in range(8):
+            print(str('0X') + str((str(str(scan_list(''.join([str(x) for x in [image_list[j][0], image_list[j][1], image_list[j][2], image_list[j][3]]]))) + str(scan_list(''.join([str(x) for x in [image_list[j][4], image_list[j][5], image_list[j][6], image_list[j][7]]])))) + ',')))
+            write_data_to_file('image.txt', str('0X') + str((str(scan_list(''.join([str(x) for x in [image_list[j][0], image_list[j][1], image_list[j][2], image_list[j][3]]]))) + str(scan_list(''.join([str(x) for x in [image_list[j][4], image_list[j][5], image_list[j][6], image_list[j][7]]]))))), ',')
+        write_data_to_file('image.txt', '', '\r\n')
+        time.sleep(1)
+    if button_b.is_pressed():
+        if image_list[y][x] == 0:
+            print(str(image_list[y][x]) + str('为0,现为1'))
+            image_list[y][x] = 1
+            print(image_list[y][x])
+            oled.fill_rect((x * 8 + 1), (y * 8 + 1), 7, 7, 1)
+            time.sleep_ms(500)
+        else:
+            print(str(image_list[y][x]) + str('为1,现为0'))
+            image_list[y][x] = 0
+            print(image_list[y][x])
+            oled.fill_rect((x * 8 + 1), (y * 8 + 1), 7, 7, 0)
+            time.sleep_ms(500)
+    if touchpad_p.read() > 0:
+        y = y + -1
+        time.sleep_ms(500)
+    elif touchpad_y.read() > 0:
+        y = y + 1
+        time.sleep_ms(500)
+    elif touchpad_t.read() > 0:
+        x = x + -1
+        time.sleep_ms(500)
+    elif touchpad_h.read() > 0:
+        x = x + 1
+        time.sleep_ms(500)
+    if x < 0:
+        x = 0
+    elif x > 7:
+        x = 7
+    elif y < 0:
+        y = 0
+    elif y > 7:
+        y = 7
+    oled.show()
