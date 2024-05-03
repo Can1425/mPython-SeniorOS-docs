@@ -1,0 +1,89 @@
+#mPythonType:0
+from mpython import *
+
+mode = None
+
+def on_touchpad_t_pressed(_):
+    global fk, eat, mode, st, snk
+    if mode != 3:
+        mode = 2
+
+touchpad_t.event_pressed = on_touchpad_t_pressed
+
+def on_touchpad_n_pressed(_):
+    global fk, eat, mode, st, snk
+    if mode != 2:
+        mode = 3
+
+touchpad_n.event_pressed = on_touchpad_n_pressed
+
+def on_touchpad_h_pressed(_):
+    global fk, eat, mode, st, snk
+    if mode != 1:
+        mode = 0
+
+touchpad_h.event_pressed = on_touchpad_h_pressed
+
+def on_touchpad_o_pressed(_):
+    global fk, eat, mode, st, snk
+    if mode != 0:
+        mode = 1
+
+touchpad_o.event_pressed = on_touchpad_o_pressed
+
+eat = None
+
+import time
+import random
+fk = None
+# 0=up,1=down,2=left,3=right
+mode = 3
+eat = True
+snk = [[32,16],[33,16],[34,16],[35,16],[36,16],[37,16],[38,16],[39,16]]
+while not button_a.is_pressed():
+    if button_b.is_pressed():
+        while button_b.is_pressed():
+            pass
+        while not button_b.is_pressed():
+            pass
+        while button_b.is_pressed():
+            pass
+    if not touchpad_p.is_pressed():
+        time.sleep_ms(100)
+    oled.fill(0)
+    if eat:
+        fk = [random.randint(0,63),random.randint(0,31)]
+        eat = False
+    oled.fill_rect((fk[0] * 2), (fk[1] * 2), 2, 2, 1)
+    for st in snk:
+        oled.fill_rect((st[0] * 2), (st[1] * 2), 2, 2, 1)
+    if mode == 0:
+        if snk[(-1)][1] > 0:
+            if snk[(-1)] == fk:
+                eat = True
+            else:
+                snk.pop(0)
+            snk.extend([[st[0],st[1]-1]])
+    elif mode == 1:
+        if snk[(-1)][1] < 31:
+            if snk[(-1)] == fk:
+                eat = True
+            else:
+                snk.pop(0)
+            snk.extend([[st[0],st[1]+1]])
+    elif mode == 2:
+        if snk[(-1)][0] > 0:
+            if snk[(-1)] == fk:
+                eat = True
+            else:
+                snk.pop(0)
+            snk.extend([[st[0]-1,st[1]]])
+    elif mode == 3:
+        if snk[(-1)][0] < 63:
+            if snk[(-1)] == fk:
+                eat = True
+            else:
+                snk.pop(0)
+            snk.extend([[st[0]+1,st[1]]])
+    oled.show()
+
