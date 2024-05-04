@@ -11,8 +11,11 @@ hero:
   tagline: All-Inclusive
   actions:
     - theme: brand
-      text: 快速上手
-      link: docs/initall
+      text: 开发文档
+      link: docs/dev/initall
+    - theme: brand
+      text: 使用文档
+      link: /
     - theme: alt
       text: 简介
       link: docs/intro
