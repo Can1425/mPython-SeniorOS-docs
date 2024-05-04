@@ -2,6 +2,8 @@
 title: 环境配置
 ---
 
+# 开发文档
+
 ::: tip
 如果你只是用户/体验者，请前往用户文档
 :::
@@ -30,6 +32,10 @@ Python Downloads [https://www.python.org/downloads/](https://www.python.org/down
 :::
 
 双击下载好的安装包，勾选【Add…PATH】，可以选择点击【Customize installation】进行自定义安装。安装成功后单击【Close】关闭
+
+: warning
+我们强烈建议将将Python 路径添加到PATH环境变量中
+:::
 
 ::: tip
 【Add…PATH】—— 将 Python 路径添加到PATH环境变量中

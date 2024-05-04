@@ -20,5 +20,8 @@ python ./tools/Build.py
 ::: tip
 请不要双击运行 Build.py
 :::
+::: danger
+请注意观察输出中是否有 Error ，如有，请根据提示进行代码修改
+:::
 
 Build.py 将会在 `./build` 目录下生成真正可运行的文件

@@ -1,11 +1,11 @@
 ---
-title: Git 克隆文件
+title: Git 克隆仓库
 ---
 # 克隆仓库
 
 <br>
 
-# Git 克隆文件
+# Git 克隆仓库
 
 ## 启动 Git
 
@@ -21,7 +21,9 @@ title: Git 克隆文件
 
 ## 克隆仓库
 
-在弹出窗口中输入 `git clone https://gitee.com/can1425/mPython-SeniorOS`
+在弹出窗口中输入 
+
+`git clone https://gitee.com/can1425/mPython-SeniorOS`
 
 ::: warning
 在 Git 命令行中请不要使用 `Ctrl`+`C` `Ctrl`+`V` ，如需使用请单击右键在弹出菜单中选择相对应功能
