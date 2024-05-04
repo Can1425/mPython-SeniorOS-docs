@@ -11,17 +11,17 @@ export const nav = [
   },
   {
     text: '快速开始',
-    activeMatch: '/docs/initall',
-    link: '/docs/initall'
+    activeMatch: '/docs/dev/initall',
+    link: '/docs/dev/initall'
   },
   {
     text: '开始使用',
-    activeMatch: '/test',
+    activeMatch: '/',
     link: '/'
   },
   {
     text: '开发详解',
-    activeMatch: '/test',
+    activeMatch: '/',
     link: '/'
   },
 ]

@@ -42,7 +42,7 @@ export default {
     socialLinks: [
       {
         svg: 'https://www.svgrepo.com/show/330508/gitee.svg',
-        link: 'https://gitee.com/Can1425/mPython-SeniorOS'
+        link: 'https://gitee.com/stfp/mPython-SeniorOS'
       }
     ],
     nav,

@@ -21,7 +21,7 @@ hero:
       link: docs/intro
     - theme: alt
       text: Gitee
-      link: https://gitee.com/can1425/mPython-SeniorOS
+      link: https://gitee.com/stfp/mPython-SeniorOS
 
 features:
   - icon: ⚡️

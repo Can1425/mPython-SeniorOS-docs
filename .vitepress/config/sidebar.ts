@@ -12,24 +12,24 @@ export const sidebar = {
     {
       text: "快速上手",
       items: [
-        { text: "环境配置 💻", link: "/docs/initall" },
+        { text: "环境配置 💻", link: "/docs/dev/initall" },
         {
           text: "克隆仓库 📦",
           collapsed: false,
           items: [
-            { text: "步骤认识", link: "/docs/get/intro" },
-            { text: "Git 克隆文件", link: "/docs/get/git" },
-            { text: "Gitee 下载 .zip 文件", link: "/docs/get/gitee-download-zip" },
+            { text: "步骤认识", link: "/docs/dev/get/intro" },
+            { text: "Git 克隆文件", link: "/docs/dev/get/git" },
+            { text: "Gitee 下载 .zip 文件", link: "/docs/dev/get/gitee-download-zip" },
           ],
         },
         {
           text: "构建环境 🧠",
           collapsed: false,
           items: [
-            { text: "步骤认识", link: "/docs/construct-environment/intro" },
-            { text: "创建并激活虚拟环境", link: "/docs/construct-environment/create-and-activate-venv" },
-            { text: "安装编译器及 Build.py 前置", link: "/docs/construct-environment/installation-dependency" },
-            { text: "使用 Build.py 构建", link: "/docs/construct-environment/construct" },
+            { text: "步骤认识", link: "/docs/dev/construct-environment/intro" },
+            { text: "创建并激活虚拟环境", link: "/docs/dev/construct-environment/create-and-activate-venv" },
+            { text: "安装编译器及 Build.py 前置", link: "/docs/dev/construct-environment/installation-dependency" },
+            { text: "使用 Build.py 构建", link: "/docs/dev/construct-environment/construct" },
           ],
         },
         {
